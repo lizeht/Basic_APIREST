@@ -30,6 +30,7 @@ router.delete('/:id',function(req,res){
     const {id}= req.params;
     if(id){
         _.each(movies,(movie,i)=>{
+            
             if(movie.id == id){
                 movies.splice(i,1);  //splice:elinnina elementos
                 
