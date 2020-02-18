@@ -14,6 +14,8 @@ app.set('port',3000);
  //Routes
 // app.use(require('./routes'));
  app.use('/api/movies',require('./routes/movies'));
+ app.use('/api/cities',require('./routes/cities'));
+
 
 //starting server 
  app.listen(app.get('port'),()=>{
